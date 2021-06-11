@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Nacionalidade</title>
+</head>
+<body>
+    <h1>Veja se é BR ou GRINGO</h1>
+    Informe o país de nascimento(digite tudo em letras minúsculas): <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="checar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function checar() {
+            var txtn = window.document.querySelector('input#txtnac')
+            var res = window.document.querySelector('div#res')
+            var nac = txtnac.value
+            res.innerHTML = `<p>Você nasceu no(a) ${nac}.</p>`
+            if (nac == `brasil`) {
+                res.innerHTML += `<p> VOCÊ É BR!</P>` 
+            } else {
+                res.innerHTML += `<p>Você é GRINGO!</P>`
+            }
+        }
+    </script>
+</body>
+</html>
