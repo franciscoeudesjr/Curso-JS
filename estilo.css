@@ -1,0 +1,31 @@
+body {
+    background: rgb(102, 120, 223);
+    font: normal 15pt Arial;
+}
+imagem  { 
+    width: 250px;  
+    height: 250px;
+    border-radius: 50%;
+}
+header {
+    color: white;
+    text-align: center; /*alinha no centro*/
+}
+
+section {
+    background: white; /*deixa em branco a cor da section*/ 
+    border-radius: 10px;  /*deixa a sextion arredondada*/
+    padding: 15px;         /*aumenta o espaço interno*/
+    width: 500px;            /*deixa a largura com 500 pixels*/
+    margin: auto;           /*deix centralizado na tela*/
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.24); /*deixa um efeito de sombra*/
+}
+div {
+    text-align: center; /*alinha os elementos dentro da caixa para o centro*/
+    padding: 8px; /*deixa um espaço dentro da caixa */
+}
+footer {
+    color: white;
+    text-align: center; /*alinha no centro*/
+    font-style: italic; /*deixa em itálico*/
+}
